@@ -45,7 +45,6 @@ $classes = array(
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
-
 		<?php echo flatsome_apply_shortcode( 'block', array( 'id' => $layout_id ) ); ?>
 			<div id="product-sidebar" class="mfp-hide">
 				<div class="sidebar-inner">

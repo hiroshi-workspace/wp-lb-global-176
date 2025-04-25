@@ -24,6 +24,7 @@ do_action_deprecated( 'wc_quick_view_before_single_product', array(), '3.18.0', 
 	<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'row row-collapse mb-0', $product ); ?>>
 		<div class="product-gallery large-6 col">
 			<div class="slider slider-show-nav product-gallery-slider main-images mb-0">
+
 				<?php if ( has_post_thumbnail() ) :
 
 					$image_title = esc_attr( get_the_title( get_post_thumbnail_id() ) );
@@ -54,12 +55,11 @@ do_action_deprecated( 'wc_quick_view_before_single_product', array(), '3.18.0', 
 				endif;
 				?>
 			</div>
-
 			<?php do_action( 'flatsome_single_product_lightbox_product_gallery' ); ?>
 			<?php do_action_deprecated( 'woocommerce_before_single_product_lightbox_summary', array(), '3.18.0', 'flatsome_single_product_lightbox_product_gallery' ); ?>
 		</div>
 
-		<div class="product-info summary large-6 col entry-summary" style="font-size:90%;">
+		<div class="product-info sdadas summary large-6 col entry-summary" style="font-size:90%;">
 			<div class="product-lightbox-inner" style="padding: 30px;">
 				<a class="plain" href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
 				<div class="is-divider small"></div>
