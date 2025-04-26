@@ -66,3 +66,8 @@ function shortcode_product_attributes_full($atts)
     return ob_get_clean();
 }
 add_shortcode('product_attrs_full', 'shortcode_product_attributes_full');
+
+function add_custom_script() {
+    wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js', [], null, true);
+}
+add_action('wp_enqueue_scripts', 'add_custom_script');
